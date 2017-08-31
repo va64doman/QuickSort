@@ -9,13 +9,13 @@ package quicksortapp;
  *
  * @author Van Do
  */
-public class QuickSortApp {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+// This program focused on making a sorting algorithm using quick sort
+public class QuickSortApp 
+{
+    public static void main(String[] args) 
+    {
+        AppClass app = new AppClass();
+        app.usingApp();
     }
-    
 }
