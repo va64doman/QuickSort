@@ -48,9 +48,20 @@ public class AppClass
                 {
                     // Set alreadyExist to false
                     alreadyExist = false;
-                    // Enter average result for this student
-                    System.out.println("Enter the average result for this student.");
-                    int grade = handleInt();
+                    int grade;
+                    // Continue entering grade while grade is less than 0 or greater than 100
+                    // To avoid inconsistent real life result to users
+                    do
+                    {
+                        // Enter average result for this student
+                        System.out.println("Enter the average result for this student.");
+                        grade = handleInt();
+                        if(grade < 0 || grade > 100)
+                        {
+                            System.out.println("Grade must be between 0 to 100 inclusively.");
+                        }
+                    }
+                    while(grade < 0 || grade > 100);
                     // Enter this student's name
                     System.out.println("Enter the student's name.");
                     String name = scan.next();
